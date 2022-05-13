@@ -1,23 +1,42 @@
 # Model level 1
-- slug: Text
-- title: Text
-- banner: Text
-- content: Text
-- categories: Text
+- [x] slug: Text
+- [x] title: Text
+- [x] banner: Text
+- [x] content: Text
+- [x] categories: Text
 
 # Model level 2
-- slug: Text
-- title: Text
-- banner: Image
-- updatedAt: Date 
-- content: RichText
-- categories: Text
+- [ ] seo_title: Text
+- [ ] seo_description: Text
+- [ ] seo_keywords: Text
+- [x] slug: Text
+- [x] title: Text
+- [x] banner: Text
+- [ ] banner_alt: Text
+- [ ] banner_title: Text
+- [ ] updatedAt: Text 
+- [ ] content: RichText
+- [x] categories: Text
 
 # Model level 3
-- slug: Text
-- title: Text
-- banner: Image
-- updatedAt: Date 
-- content: RichText
-- images: List(Images)
-- categories: List()
+- [ ] seo_title: Text
+- [ ] seo_description: Text
+- [ ] seo_keywords: Text
+- [x] slug: Text
+- [x] title: Text
+- [ ] banner: { src: Image, alt: Text, title: Text }
+- [ ] updatedAt: Date 
+- [ ] content: RichText
+- [ ] images: List(Images)
+- [ ] categories: List(Text)
+
+## Posts e Categories
+- [x] Alterar o nome da image para banner no frontend
+- [ ] Adicionar alt e title para o banner e nas imagens
+- [ ] Separar categorias em uma lista 
+
+## Post
+- [x] Implementar coleta de dados no getStaticProps 
+- [x] Gerar páginas no getStaticPaths
+- [ ] Implementar SEO
+- [ ] Implementar richtext no conteúdo
