@@ -1,11 +1,12 @@
 from django.db import models
 from ckeditor.fields import RichTextField
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class Post(models.Model):
     slug = models.CharField(max_length=120)
     title = models.CharField(max_length=120)
-    banner_src = models.CharField(max_length=120)
+    banner_src =  CloudinaryField('image')
     banner_alt = models.CharField(max_length=60)
     banner_title = models.CharField(max_length=60)
     updatedAt = models.CharField(max_length=30)

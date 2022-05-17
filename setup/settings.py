@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'cms',
     'rest_framework',
     'ckeditor',
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CLOUDINARY_ROOT_URL = 'https://res.cloudinary.com/jhonatan98rios/'
+CLOUDINARY = {
+    'cloud_name' : 'jhonatan98rios',
+    'api_key' : '844473821472415',
+    'api_secret': '11iKkBgx6A4awmGpmUikOc7vOXI'
+}

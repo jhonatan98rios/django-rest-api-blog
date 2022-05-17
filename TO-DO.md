@@ -24,9 +24,9 @@
 - [x] seo_keywords: Text
 - [x] slug: Text
 - [x] title: Text
-- [ ] banner_src: Image
-- [ ] banner_alt: Text
-- [ ] banner_title: Text
+- [x] banner_src: Cloudinary Image
+- [x] banner_alt: Text
+- [x] banner_title: Text
 - [ ] updatedAt: Date 
 - [x] content: RichText
 - [ ] images: List(Images)
@@ -34,11 +34,13 @@
 
 ## Posts e Categories
 - [x] Alterar o nome da image para banner no frontend
-- [ ] Adicionar alt e title para o banner e nas imagens
+- [x] Adicionar alt e title para o banner e nas imagens
 - [ ] Separar categorias em uma lista 
 
 ## Post
 - [x] Implementar coleta de dados no getStaticProps 
 - [x] Gerar páginas no getStaticPaths
-- [ ] Implementar SEO
-- [ ] Implementar richtext no conteúdo
+- [x] Implementar SEO
+- [x] Implementar richtext no conteúdo
+- [x] Implementar upload de imagens
+
