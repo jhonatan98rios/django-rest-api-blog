@@ -6,27 +6,29 @@
 - [x] categories: Text
 
 # Model level 2
-- [ ] seo_title: Text
-- [ ] seo_description: Text
-- [ ] seo_keywords: Text
+- [x] seo_title: Text
+- [x] seo_description: Text
+- [x] seo_keywords: Text
 - [x] slug: Text
 - [x] title: Text
-- [x] banner: Text
-- [ ] banner_alt: Text
-- [ ] banner_title: Text
-- [ ] updatedAt: Text 
-- [ ] content: RichText
+- [x] banner_src: Text
+- [x] banner_alt: Text
+- [x] banner_title: Text
+- [x] updatedAt: Text 
+- [x] content: RichText
 - [x] categories: Text
 
 # Model level 3
-- [ ] seo_title: Text
-- [ ] seo_description: Text
-- [ ] seo_keywords: Text
+- [x] seo_title: Text
+- [x] seo_description: Text
+- [x] seo_keywords: Text
 - [x] slug: Text
 - [x] title: Text
-- [ ] banner: { src: Image, alt: Text, title: Text }
+- [ ] banner_src: Image
+- [ ] banner_alt: Text
+- [ ] banner_title: Text
 - [ ] updatedAt: Date 
-- [ ] content: RichText
+- [x] content: RichText
 - [ ] images: List(Images)
 - [ ] categories: List(Text)
 
