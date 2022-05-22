@@ -24,13 +24,20 @@
 - [x] seo_keywords: Text
 - [x] slug: Text
 - [x] title: Text
-- [x] banner_src: Cloudinary Image
-- [x] banner_alt: Text
-- [x] banner_title: Text
-- [ ] updatedAt: Date 
+- [x] banner: Image (src, alt, title)
 - [x] content: RichText
-- [ ] images: List(Images)
+- [x] images: List(Images)
+- [ ] updatedAt: Date
 - [ ] categories: List(Text)
+
+## Interface
+- [ ] Acessibilidade
+- [ ] Performance
+- [ ] Rodapé
+- [ ] SEO
+- [ ] Utilizar imagens sem direitos
+- [ ] Implementar Adsense
+- [ ] Implementar Google Analytics
 
 ## Posts e Categories
 - [x] Alterar o nome da image para banner no frontend
@@ -40,7 +47,5 @@
 ## Post
 - [x] Implementar coleta de dados no getStaticProps 
 - [x] Gerar páginas no getStaticPaths
-- [x] Implementar SEO
 - [x] Implementar richtext no conteúdo
-- [x] Implementar upload de imagens
-
+- [ ] Implementar SEO
