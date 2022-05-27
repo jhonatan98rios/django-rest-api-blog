@@ -2,7 +2,6 @@ from django.db import models
 from ckeditor.fields import RichTextField
 from cloudinary.models import CloudinaryField
 
-
 class Image(models.Model):
     src = CloudinaryField('image')
     alt = models.CharField(max_length=60)
@@ -28,7 +27,7 @@ class Post(models.Model):
     slug = models.CharField(max_length=120)
     title = models.CharField(max_length=120)
     images = models.ManyToManyField(Image)
-    updatedAt = models.CharField(max_length=30)
+    updatedAt = models.DateField()
     categories = models.ManyToManyField(Category)
     content = RichTextField(blank=True, null=True)
     seo_title  = models.CharField(max_length=120)
