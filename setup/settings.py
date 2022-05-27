@@ -30,7 +30,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://django-restapi-blog.herokuapp.com/'
+    'django-restapi-blog.herokuapp.com'
 ]
 
 
