@@ -9,9 +9,12 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
-from pathlib import Path
 import os
+import json
+from dotenv import load_dotenv
+from pathlib import Path
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -78,16 +81,8 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'lkcmupjf',
-        'USER': 'lkcmupjf',
-        'PASSWORD': 'OHaz0P4DkC8xT9aAmzRpF_uSHD91R3Ig',
-        'HOST': 'kesavan.db.elephantsql.com',
-        'PORT': '5432',
-    }
-}
+DB_SECRET = str(os.getenv('DATABASE_SECRET'))
+DATABASES = json.loads(DB_SECRET)
 
 # postgres://lkcmupjf:OHaz0P4DkC8xT9aAmzRpF_uSHD91R3Ig@kesavan.db.elephantsql.com/lkcmupjf
 
@@ -134,9 +129,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CLOUDINARY_ROOT_URL = 'https://res.cloudinary.com/jhonatan98rios/'
-CLOUDINARY = {
-    'cloud_name' : 'jhonatan98rios',
-    'api_key' : '844473821472415',
-    'api_secret': '11iKkBgx6A4awmGpmUikOc7vOXI'
-}
+CLOUDINARY_ROOT_URL = str(os.getenv('CLOUDINARY_ROOT_URL'))
+
+CLOUDINARY_SECRET = str(os.getenv('CLOUDINARY_SECRET'))
+
+CLOUDINARY = json.loads(CLOUDINARY_SECRET)
