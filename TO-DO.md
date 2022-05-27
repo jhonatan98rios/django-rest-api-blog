@@ -27,25 +27,37 @@
 - [x] banner: Image (src, alt, title)
 - [x] content: RichText
 - [x] images: List(Images)
-- [ ] updatedAt: Date
-- [ ] categories: List(Text)
+- [x] categories: List(Text)
+- [x] updatedAt: Date
 
-## Interface
+## Back-end
+- [x] Implementar PostgreSQL
+- [ ] Remover todos os segredos do projeto
+- [ ] Proteger as urls admins
+
+## Front-end
+- [x] Implementar ld json schema nos posts
+- [x] Implementar Adsense
+- [x] Implementar Google Analytics
+- [x] Rodapé
+- [x] Utilizar imagens sem direitos
+- [x] SEO
 - [ ] Acessibilidade
 - [ ] Performance
-- [ ] Rodapé
-- [ ] SEO
-- [ ] Utilizar imagens sem direitos
-- [ ] Implementar Adsense
-- [ ] Implementar Google Analytics
-
+- [ ] Voltar a deployar utilizando next js
+ 
 ## Posts e Categories
 - [x] Alterar o nome da image para banner no frontend
 - [x] Adicionar alt e title para o banner e nas imagens
-- [ ] Separar categorias em uma lista 
+- [x] Separar categorias em uma lista 
 
 ## Post
 - [x] Implementar coleta de dados no getStaticProps 
 - [x] Gerar páginas no getStaticPaths
 - [x] Implementar richtext no conteúdo
-- [ ] Implementar SEO
+- [x] Implementar SEO
+
+## Devops (mês que vem)
+- [] Comprar um domínio
+- [] Migrar para S3 com cloudfront
+- [] Criar uma pipeline que teste o código, compile e envie para o S3

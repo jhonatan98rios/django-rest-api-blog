@@ -80,10 +80,16 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'lkcmupjf',
+        'USER': 'lkcmupjf',
+        'PASSWORD': 'OHaz0P4DkC8xT9aAmzRpF_uSHD91R3Ig',
+        'HOST': 'kesavan.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
+
+# postgres://lkcmupjf:OHaz0P4DkC8xT9aAmzRpF_uSHD91R3Ig@kesavan.db.elephantsql.com/lkcmupjf
 
 
 # Password validation
