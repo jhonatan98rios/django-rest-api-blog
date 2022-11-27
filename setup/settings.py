@@ -30,8 +30,9 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '.vercel.app',
     'django-restapi-blog.herokuapp.com',
-    '127.0.0.1'
+    '127.0.0.1',
 ]
 
 
