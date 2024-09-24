@@ -3,3 +3,6 @@ static/
 .env
 .vscode
 .vscode/settings.json
+ENV
+pgdata
+__pycache__

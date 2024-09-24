@@ -87,10 +87,16 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DB_SECRET = str(os.getenv('DATABASE_SECRET'))
-DATABASES = json.loads(DB_SECRET)
-
-# postgres://lkcmupjf:OHaz0P4DkC8xT9aAmzRpF_uSHD91R3Ig@kesavan.db.elephantsql.com/lkcmupjf
-
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv('BD_NAME'),
+        "USER": os.getenv('BD_USER'),
+        "PASSWORD": os.getenv('BD_PASSWORD'),
+        "HOST": os.getenv('BD_HOST'),
+        "PORT": "5432"
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -136,6 +142,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CLOUDINARY_ROOT_URL = str(os.getenv('CLOUDINARY_ROOT_URL'))
 
-CLOUDINARY_SECRET = str(os.getenv('CLOUDINARY_SECRET'))
-
-CLOUDINARY = json.loads(CLOUDINARY_SECRET)
+CLOUDINARY = {
+    "cloud_name": os.getenv('CLOUDINARY_CLOUD_NAME'),
+    "api_key": os.getenv('CLOUDINARY_API_KEY'),
+    "api_secret": os.getenv('CLOUDINARY_API_SECRET')
+}
