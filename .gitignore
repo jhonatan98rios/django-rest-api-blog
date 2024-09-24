@@ -1,5 +1,4 @@
 *.pyc
-static/
 .env
 .vscode
 .vscode/settings.json
